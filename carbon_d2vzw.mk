@@ -1,7 +1,12 @@
 $(call inherit-product, device/samsung/d2vzw/full_d2vzw.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/carbon/config/common.mk)
+$(call inherit-product, vendor/carbon/config/cdma.mk)
+
+PRODUCT_NAME := samsung_d2vzw
+PRODUCT_DEVICE := d2vzw
+PRODUCT_MANUFACTURER := Samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=d2vzw \
@@ -10,7 +15,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="d2vzw-user 4.4.2 KOT49H I535VRUDNE1 release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-verizon
-
-PRODUCT_NAME := lineage_d2vzw
-PRODUCT_DEVICE := d2vzw
-
