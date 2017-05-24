@@ -4,7 +4,7 @@ $(call inherit-product, device/samsung/d2vzw/full_d2vzw.mk)
 $(call inherit-product, vendor/carbon/config/common.mk)
 $(call inherit-product, vendor/carbon/config/cdma.mk)
 
-PRODUCT_NAME := samsung_d2vzw
+PRODUCT_NAME := carbon_d2vzw
 PRODUCT_DEVICE := d2vzw
 PRODUCT_MANUFACTURER := Samsung
 
